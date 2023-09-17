@@ -21,7 +21,8 @@ public class LoginSteps {
 
     @When("I click on the login button")
     public void clickOnLoginButton() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         loginPage.clickOnLoginButton();
+        Thread.sleep(3000);
     }
 }

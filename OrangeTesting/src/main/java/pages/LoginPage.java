@@ -12,13 +12,13 @@ import java.time.Duration;
 public class LoginPage {
     WebDriver driver;
 
-    @FindBy(xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input")
+    @FindBy(css = "input[name='username']")
     WebElement userNameTextBox;
-    
-    @FindBy(xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input")
+
+    @FindBy(css = "input[name='password']")
     WebElement passwordTextBox;
 
-    @FindBy(xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input")
+    @FindBy(css = "button[type='submit']")
     WebElement loginButton;
 
     public LoginPage(WebDriver driver){
