@@ -3,7 +3,7 @@ Feature: Profile Options Feature
     Given I am in Orange HRM web page
 
   @CheckAbout
-  Scenario: Check that about displays the correct message
+  Scenario: Check that about displays the correct information
     Given I set the user name field with "Admin"
     And I set the password field with "admin123"
     And I click on the login button

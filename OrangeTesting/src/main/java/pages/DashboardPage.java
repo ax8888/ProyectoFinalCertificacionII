@@ -19,6 +19,12 @@ public class DashboardPage {
     @FindBy(className = "oxd-userdropdown-tab")
     WebElement userDropdownButton;
 
+    @FindBy(css = "a[href='/web/index.php/pim/viewMyDetails']")
+    WebElement myInfoLink;
+
+    @FindBy(css="a[href='/web/index.php/admin/viewAdminModule']")
+    WebElement adminLink;
+
     public DashboardPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -116,6 +122,12 @@ public class DashboardPage {
         return true;
     }
 
+    public void clickOnMyInfo(){
+        myInfoLink.click();
+    }
 
+    public void clickOnAdmin(){
+        adminLink.click();
+    }
 
 }

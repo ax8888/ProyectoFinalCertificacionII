@@ -37,5 +37,15 @@ public class DashboardSteps {
         Assertions.assertTrue(dashboardPage.isAboutInformationCorrect(data));
     }
 
+    @And("I select My Info")
+    public void selectMyInfo(){
+        dashboardPage.clickOnMyInfo();
+    }
+
+    @And("I select Admin")
+    public void selectAdmin() throws InterruptedException {
+        dashboardPage.clickOnAdmin();
+        Thread.sleep(2000);
+    }
 
 }
